@@ -34,6 +34,10 @@
 		5307F93A21EC5ADB0061D5A6 /* BackBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5307F93821EC5ADA0061D5A6 /* BackBtnViewController.m */; };
 		5307F93B21EC5ADB0061D5A6 /* BackBtnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5307F93921EC5ADB0061D5A6 /* BackBtnViewController.xib */; };
 		5307F93E21EC64440061D5A6 /* LoginRegisterViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5307F93D21EC64440061D5A6 /* LoginRegisterViewCtrl.m */; };
+		5307F94121EC6EAD0061D5A6 /* IncludeCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5307F94021EC6EAD0061D5A6 /* IncludeCellView.m */; };
+		5307F94521EC6F800061D5A6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5307F94321EC6F800061D5A6 /* MainViewController.m */; };
+		5307F94A21EC71DD0061D5A6 /* WJZSickCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5307F94721EC71DD0061D5A6 /* WJZSickCell.xib */; };
+		5307F94B21EC71DD0061D5A6 /* WJZSickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5307F94821EC71DD0061D5A6 /* WJZSickCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,13 @@
 		5307F93921EC5ADB0061D5A6 /* BackBtnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackBtnViewController.xib; sourceTree = "<group>"; };
 		5307F93C21EC64440061D5A6 /* LoginRegisterViewCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRegisterViewCtrl.h; sourceTree = "<group>"; };
 		5307F93D21EC64440061D5A6 /* LoginRegisterViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginRegisterViewCtrl.m; sourceTree = "<group>"; };
+		5307F93F21EC6EAD0061D5A6 /* IncludeCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncludeCellView.h; sourceTree = "<group>"; };
+		5307F94021EC6EAD0061D5A6 /* IncludeCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncludeCellView.m; sourceTree = "<group>"; };
+		5307F94221EC6F800061D5A6 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5307F94321EC6F800061D5A6 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5307F94721EC71DD0061D5A6 /* WJZSickCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJZSickCell.xib; sourceTree = "<group>"; };
+		5307F94821EC71DD0061D5A6 /* WJZSickCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJZSickCell.m; sourceTree = "<group>"; };
+		5307F94921EC71DD0061D5A6 /* WJZSickCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJZSickCell.h; sourceTree = "<group>"; };
 		59830A3EF72F8F700650DC7F /* libPods-HikVideoPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HikVideoPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F76D78667284AE30D283DD /* Pods-HikVideoPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikVideoPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-HikVideoPro/Pods-HikVideoPro.release.xcconfig"; sourceTree = "<group>"; };
 		D7120937ED6E54B3A517EBDC /* Pods-HikVideoPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikVideoPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HikVideoPro/Pods-HikVideoPro.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +164,9 @@
 		5307F8D621EC59130061D5A6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5307F94921EC71DD0061D5A6 /* WJZSickCell.h */,
+				5307F94821EC71DD0061D5A6 /* WJZSickCell.m */,
+				5307F94721EC71DD0061D5A6 /* WJZSickCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -165,6 +179,8 @@
 				5307F93921EC5ADB0061D5A6 /* BackBtnViewController.xib */,
 				5307F93C21EC64440061D5A6 /* LoginRegisterViewCtrl.h */,
 				5307F93D21EC64440061D5A6 /* LoginRegisterViewCtrl.m */,
+				5307F94221EC6F800061D5A6 /* MainViewController.h */,
+				5307F94321EC6F800061D5A6 /* MainViewController.m */,
 			);
 			path = Ctrls;
 			sourceTree = "<group>";
@@ -172,6 +188,8 @@
 		5307F8D821EC59130061D5A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5307F93F21EC6EAD0061D5A6 /* IncludeCellView.h */,
+				5307F94021EC6EAD0061D5A6 /* IncludeCellView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +331,7 @@
 				5307F8CA21EC572C0061D5A6 /* Assets.xcassets in Resources */,
 				5307F92C21EC59480061D5A6 /* TopThreeView.xib in Resources */,
 				5307F92E21EC59480061D5A6 /* AlertView.xib in Resources */,
+				5307F94A21EC71DD0061D5A6 /* WJZSickCell.xib in Resources */,
 				5307F8E221EC59320061D5A6 /* App隐私政策.html in Resources */,
 				5307F8C821EC572A0061D5A6 /* Main.storyboard in Resources */,
 			);
@@ -380,6 +399,7 @@
 				5307F92421EC59480061D5A6 /* UserInfo.m in Sources */,
 				5307F93E21EC64440061D5A6 /* LoginRegisterViewCtrl.m in Sources */,
 				5307F8D021EC572C0061D5A6 /* main.m in Sources */,
+				5307F94521EC6F800061D5A6 /* MainViewController.m in Sources */,
 				5307F92021EC59480061D5A6 /* CustomNavigationBar.m in Sources */,
 				5307F92A21EC59480061D5A6 /* PageContentView.m in Sources */,
 				5307F91F21EC59480061D5A6 /* NSDictionary+Log.m in Sources */,
@@ -387,10 +407,12 @@
 				5307F91D21EC59480061D5A6 /* TitleView.m in Sources */,
 				5307F92D21EC59480061D5A6 /* CAShapeLayerView.m in Sources */,
 				5307F92B21EC59480061D5A6 /* TopThreeView.m in Sources */,
+				5307F94121EC6EAD0061D5A6 /* IncludeCellView.m in Sources */,
 				5307F92321EC59480061D5A6 /* HYSegmentView.m in Sources */,
 				5307F91E21EC59480061D5A6 /* ActionSheetView.m in Sources */,
 				5307F92F21EC59480061D5A6 /* AlertView.m in Sources */,
 				5307F8E121EC59320061D5A6 /* HJG_YinSi.m in Sources */,
+				5307F94B21EC71DD0061D5A6 /* WJZSickCell.m in Sources */,
 				5307F8E821EC59390061D5A6 /* HYNetworking.m in Sources */,
 				5307F8C221EC572A0061D5A6 /* AppDelegate.m in Sources */,
 				5307F8E921EC59390061D5A6 /* ShareManagerCtrl.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "LoginRegisterViewCtrl.h"
-
+#import "MainViewController.h"
 @interface LoginRegisterViewCtrl ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomLineLeft;
 @property (weak, nonatomic) IBOutlet UITextField *loginAccount;
@@ -77,6 +77,12 @@
 }
 
 - (IBAction)loginAction:(id)sender {
+    
+    UIStoryboard *SB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MainViewController *mainVC = [SB instantiateViewControllerWithIdentifier:@"MainViewController"];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:mainVC];
+    [UIApplication sharedApplication].keyWindow.rootViewController = nav;
+    
 }
 
 - (IBAction)registerAction:(id)sender {

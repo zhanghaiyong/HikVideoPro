@@ -300,7 +300,131 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="101.59999999999999" y="23.838080959520241"/>
+            <point key="canvasLocation" x="204" y="-78"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="TE2-wI-0a1">
+            <objects>
+                <tableViewController storyboardIdentifier="MainViewController" id="5SJ-gp-SdE" customClass="MainViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8dh-f5-4aw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="1Zh-N0-EAH">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="141" id="hT0-nG-Dco">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hT0-nG-Dco" id="Uc5-uw-eLr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HY-XW-ozy">
+                                                    <rect key="frame" x="12" y="12" width="351" height="117"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCP-cO-pVu">
+                                                            <rect key="frame" x="10" y="13" width="4" height="15"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="15" id="SUH-GR-LSm"/>
+                                                                <constraint firstAttribute="width" constant="4" id="W7y-6e-53f"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日实时统计" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GO9-rK-Ra5">
+                                                            <rect key="frame" x="24" y="11.5" width="92" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcE-Xw-PgI">
+                                                            <rect key="frame" x="0.0" y="41" width="351" height="35"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检测车辆：3045辆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zo-s2-tq6">
+                                                                    <rect key="frame" x="20" y="9" width="120.5" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.85098039215686272" green="0.92549019607843142" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="4zo-s2-tq6" firstAttribute="leading" secondItem="xcE-Xw-PgI" secondAttribute="leading" constant="20" id="Rgo-0v-8vp"/>
+                                                                <constraint firstItem="4zo-s2-tq6" firstAttribute="centerY" secondItem="xcE-Xw-PgI" secondAttribute="centerY" id="SxT-LN-XV9"/>
+                                                                <constraint firstAttribute="height" constant="35" id="fVr-bB-Eoj"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20c-Du-8D6">
+                                                            <rect key="frame" x="0.0" y="76" width="351" height="35"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="超限车辆：3045辆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qeh-s7-xbN">
+                                                                    <rect key="frame" x="20" y="9" width="120.5" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="Qeh-s7-xbN" firstAttribute="centerY" secondItem="20c-Du-8D6" secondAttribute="centerY" id="HRM-J9-jUx"/>
+                                                                <constraint firstItem="Qeh-s7-xbN" firstAttribute="leading" secondItem="20c-Du-8D6" secondAttribute="leading" constant="20" id="Tzc-LB-HjT"/>
+                                                                <constraint firstAttribute="height" constant="35" id="eTT-NW-6ff"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="HCP-cO-pVu" firstAttribute="top" secondItem="0HY-XW-ozy" secondAttribute="top" constant="13" id="50m-0B-WJ7"/>
+                                                        <constraint firstItem="xcE-Xw-PgI" firstAttribute="top" secondItem="HCP-cO-pVu" secondAttribute="bottom" constant="13" id="Iok-h6-x69"/>
+                                                        <constraint firstItem="GO9-rK-Ra5" firstAttribute="centerY" secondItem="HCP-cO-pVu" secondAttribute="centerY" id="PsP-Rx-Yr7"/>
+                                                        <constraint firstItem="20c-Du-8D6" firstAttribute="top" secondItem="xcE-Xw-PgI" secondAttribute="bottom" id="V4H-Fa-L0K"/>
+                                                        <constraint firstItem="xcE-Xw-PgI" firstAttribute="leading" secondItem="0HY-XW-ozy" secondAttribute="leading" id="VSR-bG-lZs"/>
+                                                        <constraint firstItem="HCP-cO-pVu" firstAttribute="leading" secondItem="0HY-XW-ozy" secondAttribute="leading" constant="10" id="YoX-NY-QrO"/>
+                                                        <constraint firstAttribute="trailing" secondItem="xcE-Xw-PgI" secondAttribute="trailing" id="bHc-EX-Zsr"/>
+                                                        <constraint firstAttribute="trailing" secondItem="20c-Du-8D6" secondAttribute="trailing" id="cOG-Fy-ws2"/>
+                                                        <constraint firstItem="20c-Du-8D6" firstAttribute="leading" secondItem="0HY-XW-ozy" secondAttribute="leading" id="xbK-77-wOZ"/>
+                                                        <constraint firstItem="GO9-rK-Ra5" firstAttribute="leading" secondItem="HCP-cO-pVu" secondAttribute="trailing" constant="10" id="xkT-Pa-7ID"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                            <integer key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                            <real key="value" value="0.29999999999999999"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="0HY-XW-ozy" firstAttribute="top" secondItem="Uc5-uw-eLr" secondAttribute="top" constant="12" id="Aaa-Tc-bJN"/>
+                                                <constraint firstAttribute="trailing" secondItem="0HY-XW-ozy" secondAttribute="trailing" constant="12" id="Kgo-Qu-iLI"/>
+                                                <constraint firstItem="0HY-XW-ozy" firstAttribute="leading" secondItem="Uc5-uw-eLr" secondAttribute="leading" constant="12" id="LvO-h7-eOR"/>
+                                                <constraint firstAttribute="bottom" secondItem="0HY-XW-ozy" secondAttribute="bottom" constant="12" id="zWh-s4-Eb1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="5SJ-gp-SdE" id="Cvg-QG-e8j"/>
+                            <outlet property="delegate" destination="5SJ-gp-SdE" id="oVO-Fl-bdp"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAJ-Sp-mwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1370" y="-175"/>
         </scene>
     </scenes>
 </document>
