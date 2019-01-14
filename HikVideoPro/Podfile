@@ -1,0 +1,15 @@
+platform :ios, '9.0'
+
+target :HikVideoPro do
+
+pod 'SVProgressHUD'
+pod 'IQKeyboardManager'
+pod 'AFNetworking'
+pod 'YYModel'
+pod 'MJRefresh'
+pod 'iOS-Categories'
+pod 'YYWebImage'
+pod 'PNChart', '~> 0.8.9'
+end
+
+
