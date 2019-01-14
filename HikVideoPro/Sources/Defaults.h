@@ -21,7 +21,7 @@
 #define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
 #define kTopHeight (kStatusBarHeight + kNavBarHeight)
 
-#define kMainColor [UIColor colorWithHex:0x334079]
+#define kMainColor [UIColor colorWithHex:0x009688]
 
 #define ShadowColor [UIColor colorWithHex:0x00251E]
 

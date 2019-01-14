@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <IQKeyboardManager.h>
+#import "LoginRegisterViewCtrl.h"
 @interface AppDelegate ()
 
 @end
@@ -16,10 +17,68 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [UITabBar appearance].translucent = NO;
+    
+    [UINavigationBar appearance].barTintColor = kMainColor;
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                           [UIFont fontWithName:@"PingFangSC-Semibold" size:18], NSFontAttributeName, nil]];
+    
+    //        [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
+    
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.shouldResignOnTouchOutside = YES;
+    manager.shouldToolbarUsesTextFieldTintColor = NO;
+    manager.enableAutoToolbar = NO;
+    
+    [self checkChange];
+    
+    UIStoryboard *SB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    LoginRegisterViewCtrl *loginVc = [SB instantiateViewControllerWithIdentifier:@"LoginRegisterViewCtrl"];
+    [self.window setRootViewController:loginVc];
+    
+    
+    //    if ([[UserInfo userModel].isLogin isEqualToString:@"YES"]) {
+    //        MYTabBarViewController *mYTabbar = [[MYTabBarViewController alloc]init];
+    //        self.window.rootViewController = mYTabbar;
+    //    }else {
+    //        LoginViewCtrl *loginVC = [[LoginViewCtrl alloc]init];
+    //        self.window.rootViewController = loginVC;
+    //    }
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
+
+- (void)checkChange {
+    
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    [manager startMonitoring];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus statusNet) {
+        switch (statusNet) {
+            case -1: {
+                [UItils showErrorProgress:@"网络异常,请检查你的网络"];
+                //未知网络
+            }
+                break;
+            case 0: {
+                [UItils showErrorProgress:@"网络异常,请检查你的网络"];
+                //无法联网
+            }
+                break;
+                
+            default:
+                break;
+        }
+    }];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

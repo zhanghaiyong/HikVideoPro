@@ -33,6 +33,7 @@
 		5307F93621EC59480061D5A6 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5307F91B21EC59480061D5A6 /* NSArray+Log.m */; };
 		5307F93A21EC5ADB0061D5A6 /* BackBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5307F93821EC5ADA0061D5A6 /* BackBtnViewController.m */; };
 		5307F93B21EC5ADB0061D5A6 /* BackBtnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5307F93921EC5ADB0061D5A6 /* BackBtnViewController.xib */; };
+		5307F93E21EC64440061D5A6 /* LoginRegisterViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5307F93D21EC64440061D5A6 /* LoginRegisterViewCtrl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,8 @@
 		5307F93721EC5ADA0061D5A6 /* BackBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackBtnViewController.h; sourceTree = "<group>"; };
 		5307F93821EC5ADA0061D5A6 /* BackBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackBtnViewController.m; sourceTree = "<group>"; };
 		5307F93921EC5ADB0061D5A6 /* BackBtnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackBtnViewController.xib; sourceTree = "<group>"; };
+		5307F93C21EC64440061D5A6 /* LoginRegisterViewCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRegisterViewCtrl.h; sourceTree = "<group>"; };
+		5307F93D21EC64440061D5A6 /* LoginRegisterViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginRegisterViewCtrl.m; sourceTree = "<group>"; };
 		59830A3EF72F8F700650DC7F /* libPods-HikVideoPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HikVideoPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F76D78667284AE30D283DD /* Pods-HikVideoPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikVideoPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-HikVideoPro/Pods-HikVideoPro.release.xcconfig"; sourceTree = "<group>"; };
 		D7120937ED6E54B3A517EBDC /* Pods-HikVideoPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikVideoPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HikVideoPro/Pods-HikVideoPro.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				5307F93721EC5ADA0061D5A6 /* BackBtnViewController.h */,
 				5307F93821EC5ADA0061D5A6 /* BackBtnViewController.m */,
 				5307F93921EC5ADB0061D5A6 /* BackBtnViewController.xib */,
+				5307F93C21EC64440061D5A6 /* LoginRegisterViewCtrl.h */,
+				5307F93D21EC64440061D5A6 /* LoginRegisterViewCtrl.m */,
 			);
 			path = Ctrls;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 			files = (
 				5307F93621EC59480061D5A6 /* NSArray+Log.m in Sources */,
 				5307F92421EC59480061D5A6 /* UserInfo.m in Sources */,
+				5307F93E21EC64440061D5A6 /* LoginRegisterViewCtrl.m in Sources */,
 				5307F8D021EC572C0061D5A6 /* main.m in Sources */,
 				5307F92021EC59480061D5A6 /* CustomNavigationBar.m in Sources */,
 				5307F92A21EC59480061D5A6 /* PageContentView.m in Sources */,
